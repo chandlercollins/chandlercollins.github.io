@@ -96,8 +96,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .beyond p{max-width:72ch;font-size:14.5px;color:var(--ink-faint);line-height:1.7;margin:0;}
 .beyond b{color:var(--ink-soft);}
 
+/* ---------- contact CTA ---------- */
+.contact{border-top:1px solid var(--line);margin-top:40px;padding:34px 0 64px;}
+
 /* ---------- work / projects ---------- */
-.work{padding:24px 0 56px;}
+.work{padding:24px 0 8px;}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;}
 .tile{position:relative;display:flex;flex-direction:column;background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r);padding:24px 22px 20px;min-height:196px;transition:border-color .2s,transform .2s,box-shadow .2s;color:var(--ink);overflow:hidden;}
 a.tile:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 16px 36px -22px color-mix(in srgb,var(--accent) 60%,transparent);text-decoration:none;}
