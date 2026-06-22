@@ -11,10 +11,8 @@
     });
   }
 
-  var live = 0;
   var html = items.map(function (p) {
-    var isLive = p.status === "live" && p.href;
-    if (isLive) live++;
+    var isLink = !!p.href;
     var chipClass = p.status === "live" ? "chip live" : p.status === "wip" ? "chip wip" : "chip";
     var inner =
       '<p class="tag">' + esc(p.tag || "") + "</p>" +
@@ -22,10 +20,11 @@
       "<p>" + esc(p.blurb) + "</p>" +
       '<div class="foot">' +
         '<span class="' + chipClass + '">' + esc(p.statusLabel || p.status) + "</span>" +
-        (isLive ? '<span class="go" aria-hidden="true">View →</span>' : "") +
+        (isLink ? '<span class="go" aria-hidden="true">View →</span>' : "") +
       "</div>";
-    if (isLive) {
-      return '<a class="tile" href="' + esc(p.href) + '">' + inner + "</a>";
+    if (isLink) {
+      var ext = /^https?:/.test(p.href) ? ' target="_blank" rel="noopener"' : "";
+      return '<a class="tile" href="' + esc(p.href) + '"' + ext + ">" + inner + "</a>";
     }
     return '<article class="tile' + (p.ghost ? " ghost" : "") + '">' + inner + "</article>";
   }).join("");
