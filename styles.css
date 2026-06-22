@@ -43,6 +43,10 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 
 /* ---------- hero ---------- */
 .hero{padding:clamp(52px,12vh,124px) 0 clamp(30px,7vh,60px);}
+.avatar{width:124px;height:124px;border-radius:50%;overflow:hidden;margin:0 0 26px;border:3px solid var(--line);box-shadow:0 8px 22px -12px rgba(40,30,20,.35);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;}
+.avatar img{width:100%;height:100%;object-fit:cover;object-position:50% 14%;display:block;filter:saturate(.9);transition:filter .25s ease,transform .35s ease;}
+.avatar:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 14px 30px -12px color-mix(in srgb,var(--accent) 50%,transparent);}
+.avatar:hover img{filter:saturate(1.08);transform:scale(1.06);}
 .eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 20px;font-weight:500;}
 .eyebrow .arrow{color:var(--accent);font-weight:700;}
 .hero h1{
@@ -91,10 +95,16 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .edu{font-size:13.5px;color:var(--ink-faint);margin:20px 0 0;line-height:1.65;}
 .edu b{color:var(--ink-soft);}
 
-/* ---------- beyond ---------- */
-.beyond{padding:8px 0 36px;}
-.beyond p{max-width:72ch;font-size:14.5px;color:var(--ink-faint);line-height:1.7;margin:0;}
-.beyond b{color:var(--ink-soft);}
+/* ---------- beyond the desk (first-class) ---------- */
+.beyond{padding:8px 0;}
+.beyond-lead{font-family:var(--font-display);font-size:clamp(23px,3.6vw,34px);line-height:1.14;letter-spacing:-.01em;color:var(--ink);font-weight:520;max-width:22ch;margin:0 0 28px;}
+.beyond-lead .accent{color:var(--accent);font-style:italic;}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:780px;margin:0 0 24px;}
+.feat{border-top:2px solid var(--accent);padding-top:12px;}
+.feat-n{display:block;font-family:var(--font-display);font-size:clamp(32px,5vw,48px);font-weight:560;color:var(--accent);line-height:1;letter-spacing:-.02em;}
+.feat-l{display:block;font-size:13px;color:var(--ink-soft);margin-top:9px;line-height:1.45;}
+.beyond-more{max-width:66ch;font-size:14.5px;color:var(--ink-soft);line-height:1.65;margin:0;}
+.beyond-more a{font-weight:500;}
 
 /* ---------- contact CTA ---------- */
 .contact{border-top:1px solid var(--line);margin-top:40px;padding:34px 0 64px;}
@@ -128,6 +138,8 @@ footer a:hover{color:var(--accent);}
 @media (max-width:640px){
   .wrap{padding:0 18px;}
   .grid{grid-template-columns:1fr;}
+  .feats{grid-template-columns:1fr;gap:16px;}
+  .avatar{width:104px;height:104px;margin-bottom:22px;}
   .hero{padding:44px 0 26px;}
   .hero h1{font-size:clamp(33px,10.5vw,46px);max-width:18ch;}
   .hero .links{gap:8px;}
