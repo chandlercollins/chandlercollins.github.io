@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chandler Collins — Product Manager</title>
+  <meta name="description" content="Chandler Collins — Product Manager in Washington, DC. I turn complex problems into simple, useful things." />
+  <meta name="author" content="Chandler Collins" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:title" content="Chandler Collins — Product Manager" />
+  <meta property="og:description" content="I turn complex problems into simple, useful things. Product Manager in Washington, DC." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chandlercollins.github.io/" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230a0e14'/><text x='16' y='22' font-size='17' text-anchor='middle' fill='%2334d399' font-family='sans-serif' font-weight='700'>C</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#work">Skip to work</a>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Product Manager · Washington, DC</p>
+      <h1>I turn complex problems into <span class="accent">simple, useful things.</span></h1>
+      <p class="lede">
+        I'm Chandler Collins — a product manager with 6+ years shipping products people
+        actually understand. My superpower is distilling messy, complex topics into clean
+        frameworks, then making the pieces click together like magic.
+      </p>
+      <nav class="links" aria-label="Contact">
+        <a class="btn primary" href="#work">See my work ↓</a>
+        <a class="btn" href="https://www.linkedin.com/" rel="me">LinkedIn</a>
+        <a class="btn" href="mailto:hello@example.com">Email</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="work" id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Selected work</h2>
+          <span class="count" id="project-count"></span>
+        </div>
+        <div class="grid" id="projects-grid">
+          <noscript>
+            <article class="tile">
+              <p class="tag">Interactive · Financial education</p>
+              <h3>FIRE Crash Course</h3>
+              <p>A scrollytelling crash course in financial independence. (Enable JavaScript to browse projects.)</p>
+            </article>
+          </noscript>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span id="year"></span> Chandler Collins · Washington, DC</span>
+      <span><a href="https://github.com/chandlercollins">GitHub</a> · <a href="mailto:hello@example.com">hello@example.com</a></span>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="projects.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

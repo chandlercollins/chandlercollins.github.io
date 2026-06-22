@@ -1,0 +1,9 @@
+# OS / editor junk
+.DS_Store
+*.log
+node_modules/
+
+# Claude Code local session state
+.claude/settings.local.json
+.claude/projects/
+.claude/memory/
