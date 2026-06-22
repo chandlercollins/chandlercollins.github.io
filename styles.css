@@ -58,6 +58,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .btn:hover{border-color:var(--accent);transform:translateY(-1px);text-decoration:none;}
 .btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);}
 .btn.primary:hover{filter:brightness(.95);}
+.ico{flex:0 0 auto;display:inline-block;vertical-align:middle;}
 
 /* ---------- section heads ---------- */
 .section-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin:0 0 24px;border-top:1px solid var(--line);padding-top:28px;}
@@ -69,6 +70,11 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
 .prose{max-width:66ch;}
 .prose p{font-size:clamp(15px,1.7vw,17.5px);color:var(--ink-soft);margin:0 0 16px;line-height:1.7;}
 .prose b{color:var(--ink);font-weight:600;}
+/* contact CTA */
+.cta{margin:24px 0 4px;}
+.cta-kicker{font-size:clamp(15px,1.7vw,17.5px);color:var(--ink-soft);margin:0 0 14px;line-height:1.55;}
+.cta-kicker b{color:var(--ink);font-weight:600;}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px;}
 
 /* ---------- experience ---------- */
 .xp{padding:8px 0;}

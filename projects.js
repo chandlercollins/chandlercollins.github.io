@@ -14,16 +14,16 @@ window.PROJECTS = [
     title: "No-BS White Noise",
     tag: "iOS / iPadOS app · built with Claude Code",
     blurb: "A clean, no-nonsense white-noise app I designed and shipped — hands-on AI-assisted product development, end to end.",
-    href: "",                 // TODO: App Store link
+    href: "https://apps.apple.com/app/id6753262024",
     status: "live",
     statusLabel: "On the App Store"
   },
   {
     title: "Running Japan",
     tag: "Documentary · Director",
-    blurb: "An award-winning documentary I directed and crowdfunded ($6K+), filmed across Japan — storytelling and execution in a demanding environment.",
-    href: "",                 // TODO: video link
+    blurb: "The world's first English-language documentary on ekiden — Japan's distinctive team-based long-distance relay racing. I directed and crowdfunded it ($6K+), filming across Japan.",
+    href: "https://www.youtube.com/watch?v=Zoj-DGGgjUU",
     status: "film",
-    statusLabel: "Award-winning film"
+    statusLabel: "Watch the film"
   }
 ];
