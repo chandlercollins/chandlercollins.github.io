@@ -33,12 +33,12 @@ automatically from the default branch — no Actions pipeline needed.
 
 ## Phases
 
-### Phase 0 — Foundation  ⏳ (in progress)
+### Phase 0 — Foundation  ✅ (done — live at chandlercollins.github.io)
 - [x] Decide architecture (3 repos) + tech (vanilla, data-driven)
 - [x] Scaffold `chandlercollins.github.io` (landing, styles, tiles, README, .nojekyll)
-- [ ] Create the public GitHub repo + push
-- [ ] Enable GitHub Pages (deploy from `main`)
-- [ ] Verify the live site renders
+- [x] Create the public GitHub repo + push
+- [x] Enable GitHub Pages (deploy from `main`)
+- [x] Verify the live site renders (HTTP 200)
 
 ### Phase 1 — Portfolio polish
 - [ ] Replace placeholder bio with Chandler's real story
@@ -46,16 +46,16 @@ automatically from the default branch — no Actions pipeline needed.
 - [ ] Responsive / accessibility QA across breakpoints
 - [ ] Optionally add existing projects as tiles (e.g. NoBS White Noise app)
 
-### Phase 2 — FIRE Crash Course (the big one)
-- [ ] New public repo `fire-crash-course`, seeded from the scrollyteller
-- [ ] **Strip all real data** → neutral defaults; remove names/employers/balances
-- [ ] Reframe Chandler/Cowan → "You / Your partner" (or single-person mode)
+### Phase 2 — FIRE Crash Course  🟡 (shipped v1 — live at /fire-crash-course/)
+- [x] New public repo `fire-crash-course`, seeded from the scrollyteller
+- [x] **Strip all real data** → fictional example numbers; remove names/employers/balances
+- [x] Reframe to a neutral example household ("Sam & Jordan") + teaching copy on each view
+- [x] Enable Pages, wire up the portfolio tile to the live URL
 - [ ] Turn fixed toggles into **editable inputs** so users model their own numbers
-      (income, savings, contributions, loan balance + rate, retirement spend, etc.)
-- [ ] Add the **teaching layer**: each view explains a concept (compounding, the 4% rule,
-      debt-vs-invest, account types, automation) with plain-language annotations
+      (income, savings, contributions, loan balance + rate, retirement spend, etc.) ← **next piece**
+- [ ] Deepen the **teaching layer**: short explainers/tooltips per concept (compounding,
+      the 4% rule, debt-vs-invest, account types, automation)
 - [ ] Persist inputs to `localStorage`; optional shareable URL / export
-- [ ] Enable Pages, wire up the portfolio tile to the live URL
 
 ### Phase 3 — Deploy & connect
 - [ ] Custom domain (`CNAME` + DNS), HTTPS
