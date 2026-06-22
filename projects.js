@@ -6,8 +6,8 @@ window.PROJECTS = [
     tag: "Interactive · Financial education",
     blurb: "A scrollytelling crash course in financial independence — watch how saving, debt, taxes, and time compound into freedom, then plug in your own numbers and model your plan.",
     href: "./fire-crash-course/",
-    status: "wip",          // flips to "live" once Phase 2 ships
-    statusLabel: "In progress"
+    status: "live",
+    statusLabel: "Live"
   },
   {
     title: "More on the way",
