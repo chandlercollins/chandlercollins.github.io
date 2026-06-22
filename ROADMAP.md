@@ -46,16 +46,18 @@ automatically from the default branch — no Actions pipeline needed.
 - [ ] Responsive / accessibility QA across breakpoints
 - [ ] Optionally add existing projects as tiles (e.g. NoBS White Noise app)
 
-### Phase 2 — FIRE Crash Course  🟡 (shipped v1 — live at /fire-crash-course/)
+### Phase 2 — FIRE Crash Course  🟢 (v2 live — editable & realistic)
 - [x] New public repo `fire-crash-course`, seeded from the scrollyteller
 - [x] **Strip all real data** → fictional example numbers; remove names/employers/balances
 - [x] Reframe to a neutral example household ("Sam & Jordan") + teaching copy on each view
 - [x] Enable Pages, wire up the portfolio tile to the live URL
-- [ ] Turn fixed toggles into **editable inputs** so users model their own numbers
-      (income, savings, contributions, loan balance + rate, retirement spend, etc.) ← **next piece**
+- [x] **Editable inputs** ("Make it yours" panel): income, investing, debt, starting
+      balance, tax rate, retirement spend — persisted to `localStorage` (device-only)
+- [x] Rewrote the model as an "order of operations" investing waterfall (robust at any income)
+- [x] Lowered example defaults + toggle ranges to realistic levels (~$130k household)
 - [ ] Deepen the **teaching layer**: short explainers/tooltips per concept (compounding,
       the 4% rule, debt-vs-invest, account types, automation)
-- [ ] Persist inputs to `localStorage`; optional shareable URL / export
+- [ ] Single-person mode (currently a two-earner household); shareable URL / export
 
 ### Phase 3 — Deploy & connect
 - [ ] Custom domain (`CNAME` + DNS), HTTPS
