@@ -13,7 +13,7 @@ window.PROJECTS = [
   {
     title: "No-BS White Noise",
     tag: "iOS / iPadOS app · built with Claude Code",
-    blurb: "A clean, no-nonsense white-noise app I designed and shipped — hands-on AI-assisted product development, end to end.",
+    blurb: "A clean, no-nonsense white-noise app I designed, built, and shipped to the App Store — solo, start to finish.",
     href: "https://apps.apple.com/app/id6753262024",
     status: "live",
     statusLabel: "On the App Store"

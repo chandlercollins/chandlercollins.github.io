@@ -1,47 +1,43 @@
-# chandlercollins.github.io
+# chandlercollins.com
 
-Personal portfolio for **Chandler Collins** — Product Manager, Washington, DC.
-A static, dependency-free site hosted on GitHub Pages, with a data-driven grid of project tiles.
+My personal site — a short bio, a grid of things I've built, and the stuff I do when I'm not at a desk. Static, no build step, no dependencies. Hosted on GitHub Pages.
 
-🔗 **Live:** https://chandlercollins.github.io/
+🔗 **Live:** https://chandlercollins.com
 
-## Structure
+> Note: this repo has to stay named `chandlercollins.github.io` — that's how GitHub Pages serves a user site. The custom domain comes from the `CNAME` file + DNS, not from the repo name.
+
+## Layout
 
 ```
-index.html      landing page (hero + work section)
-styles.css      shared dark design system
-projects.js     project tile data — add a project here
-main.js         renders the tiles
-.nojekyll       serve files as-is (no Jekyll processing)
-ROADMAP.md      the build plan, worked through piece by piece
+index.html   the page — hero, work, "beyond the desk", contact
+styles.css   the design system
+projects.js  project tiles, one array entry each
+main.js      renders the tiles
+CNAME        custom domain for GitHub Pages
+.nojekyll    serve files as-is, skip Jekyll
 ```
 
 ## Adding a project
 
-Append one entry to `window.PROJECTS` in [`projects.js`](projects.js):
+Drop one entry into `window.PROJECTS` in [`projects.js`](projects.js):
 
 ```js
 {
   title: "Project name",
   tag: "Category · Category",
-  blurb: "One or two sentences on what it is.",
+  blurb: "A sentence or two on what it is.",
   href: "./project-slug/",   // or an external URL
-  status: "live",            // "live" | "wip" | "soon"
+  status: "live",            // "live" | "wip" | anything else
   statusLabel: "Live"
 }
 ```
 
-Only `status: "live"` tiles become clickable links.
+Tiles with an `href` become clickable.
 
-## Running locally
+## Running it locally
 
-It's static — open `index.html`, or serve the folder:
+It's just files — open `index.html`, or serve the folder:
 
 ```bash
 python3 -m http.server 8080   # → http://localhost:8080
 ```
-
-## Roadmap
-
-See [ROADMAP.md](ROADMAP.md). Next up: the public **FIRE Crash Course** (its own repo,
-linked from the first tile) and a custom domain.

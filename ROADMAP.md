@@ -60,7 +60,7 @@ automatically from the default branch — no Actions pipeline needed.
 - [ ] Single-person mode (currently a two-earner household); shareable URL / export
 
 ### Phase 3 — Deploy & connect
-- [ ] Custom domain (`CNAME` + DNS), HTTPS
+- [x] Custom domain (`CNAME` = chandlercollins.com); DNS cutover from Squarespace forwarding + enforce HTTPS
 - [ ] Optional privacy-friendly analytics
 - [ ] Final polish pass
 
